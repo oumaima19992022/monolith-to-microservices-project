@@ -10,9 +10,9 @@ router.use('/auth', AuthRouter);
 router.get('/');
 
 router.get('/:id', async (req: Request, res: Response) => {
-  const {id} = req.params;
-  const item = await User.findByPk(id);
-  res.send(item);
+    const {id} = req.params;
+    const item = await User.findByPk(id);
+    res.send(item);
 });
 
 export const UserRouter: Router = router;

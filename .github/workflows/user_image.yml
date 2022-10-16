@@ -28,6 +28,6 @@ jobs:
             context: ./udagram-api-user
             file: ./udagram-api-user/Dockerfile
             push: true
-            tags: ${{ secrets.DOCKER_HUB_USERNAME }}/udagram-api-user:v1.0.1-alpha
+            tags: ${{ secrets.DOCKER_HUB_USERNAME }}/udagram-api-user:v1.0.1-beta
             cache-from: type=registry,ref=${{ secrets.DOCKER_HUB_USERNAME }}/udagram-api-user:buildcache
             cache-to: type=registry,ref=${{ secrets.DOCKER_HUB_USERNAME }}/udagram-api-user:buildcache,mode=max
